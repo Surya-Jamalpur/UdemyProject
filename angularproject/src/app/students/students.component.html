@@ -1,0 +1,16 @@
+<input class="form-control" [(ngModel)]="studentName" />
+<button class="btn btn-primary" [disabled]="!allowNewStudent" (click)="onAddStudent()" >Add Student</button>
+<div class="row">
+    <div class="col-md-6">
+        <app-student *ngFor="let student of students"></app-student>
+    </div>
+    <div class="col-md-6">
+        <p *ngFor="let student of students; let i=index"
+        [ngStyle]="{color: i >= 5 || i <= 2 ? 'green' : 'red'}">{{i}} - {{ student }}
+            <button (click)="removeStudent(i)">Remove</button>
+        </p>
+    </div>
+</div>
+
+<p>{{ addStudentStatus }}</p>
+
