@@ -14,6 +14,9 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { ServersComponent } from './servers/servers.component';
 import { ServerCockpitComponent } from './servers/server-cockpit/server-cockpit.component';
 import { ServerElementComponent } from './servers/server-element/server-element.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { EmployeeComponent } from './employees/employee/employee.component';
+import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ServerElementComponent } from './servers/server-element/server-element.
     ShoppingEditComponent,
     ServersComponent,
     ServerCockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    EmployeesComponent,
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
