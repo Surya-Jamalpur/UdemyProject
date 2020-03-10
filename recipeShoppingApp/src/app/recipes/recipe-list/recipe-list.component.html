@@ -1,1 +1,10 @@
+
+<button class="btn btn-success">New Recipe</button>
+<hr>
+<ul>
+    <li *ngFor="let x of recipes">
+        <a href="#">{{ x.name }}</a>
+    </li>
+</ul>
+
 <app-recipe-item></app-recipe-item>

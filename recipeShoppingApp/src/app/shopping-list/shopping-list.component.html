@@ -1,1 +1,6 @@
-<p>shopping-list works!</p>
+<h2>Shopping List</h2>
+    <div *ngFor ="let ingrediant of ingrediants">
+        {{ingrediant.name}} - ({{ingrediant.amount}})
+    </div>
+    <hr>
+    <app-shopping-edit></app-shopping-edit>
