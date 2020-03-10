@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +12,8 @@ import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ServersComponent } from './servers/servers.component';
+import { ServerCockpitComponent } from './servers/server-cockpit/server-cockpit.component';
+import { ServerElementComponent } from './servers/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,13 @@ import { ServersComponent } from './servers/servers.component';
     RecipeDetailsComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    ServersComponent
+    ServersComponent,
+    ServerCockpitComponent,
+    ServerElementComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
