@@ -1,8 +1,13 @@
+
+
 <div class="row">
-    <div class="col-md-6">
-        <app-employee-list></app-employee-list>
+    <div class="col-md-4">
+            <app-add-employee (EmployeeAdded)="newempadded($event)"></app-add-employee>
     </div>
-    <div class="col-md-6">
-        <app-employee></app-employee>
+    <div class="col-md-4">
+        <app-employee *ngFor="let employee of employeeList" [empElement]="employee"></app-employee>
+    </div>
+    <div class="col-md-4">
+         <app-employee-list></app-employee-list>
     </div>
 </div>

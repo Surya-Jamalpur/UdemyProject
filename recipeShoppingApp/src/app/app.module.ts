@@ -17,6 +17,7 @@ import { ServerElementComponent } from './servers/server-element/server-element.
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import { AddEmployeeComponent } from './employees/add-employee.component/add-employee.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     ServerElementComponent,
     EmployeesComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    AddEmployeeComponent
   ],
   imports: [
     BrowserModule,
