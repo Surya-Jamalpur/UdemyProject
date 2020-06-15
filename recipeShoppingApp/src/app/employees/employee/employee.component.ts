@@ -7,6 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EmployeeComponent implements OnInit {
   @Input() empElement:{empName:string, empId:number};
+
+  onedit(selectedEmployee){
+    console.log(selectedEmployee)
+  }
   constructor() { }
 
   ngOnInit() {
